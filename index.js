@@ -612,7 +612,7 @@ function backup(options) {
   }
 
   var my = {
-    dir: path.join(__dirname, 'dump', path.sep),
+    dir: path.join(opt.root || __dirname, 'dump', path.sep),
     uri: String(opt.uri),
     root: path.resolve(String(opt.root || '')) + path.sep,
     stream: opt.stream || null,
